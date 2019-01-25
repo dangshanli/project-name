@@ -69,7 +69,11 @@
             <version>${swagger2.version}</version>
         </dependency>
 
-
+        <!--aop 支持-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

@@ -28,12 +28,12 @@
         </RollingFile>
     </Appenders>
     <Loggers>
-        <Logger name="com.companyxxx.projectname.controller" level="debug" additivity="false">
+        <Logger name="com.companyxxx.projectname.controller" level="${logging.level.com.companyxxx}" additivity="false">
             <AppenderRef ref="ConsoleAppender"/>
             <AppenderRef ref="FileAppender"/>
         </Logger>
 
-        <Root level="info">
+        <Root level="${logging.level.com.companyxxx}">
             <AppenderRef ref="ConsoleAppender"/>
         </Root>
     </Loggers>

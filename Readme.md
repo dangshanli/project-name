@@ -1,3 +1,8 @@
 - Mysql+Jpa配置
 - 双数据源配置
 - Swagger2配置以及Controller配置demo
+- 统一异常处理
+- 统一日志处理
+- 日志配置
+- redis配置
+- spring security

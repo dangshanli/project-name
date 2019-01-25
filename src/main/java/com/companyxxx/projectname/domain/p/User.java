@@ -1,6 +1,7 @@
 package com.companyxxx.projectname.domain.p;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 /**
  * @author: luzj
@@ -9,7 +10,7 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name = "user")
-public class User {
+public class User implements Serializable {
     @Id
     @GeneratedValue
     private Long id;

@@ -1,6 +1,7 @@
 package com.companyxxx.projectname.controller;
 
 import com.companyxxx.projectname.domain.p.User;
+import com.companyxxx.projectname.exceptions.UniException;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -38,5 +39,15 @@ public class UserController {
                 .filter((item)-> item.getId() == id)
                 .forEach((item)-> System.out.println(item));
         return r;
+    }
+
+    /**
+     * 统一异常处理演示
+     * @return
+     * @throws UniException
+     */
+    @RequestMapping("/json")
+    public String json() throws UniException {
+        throw  new UniException("统一错误示例!!!");
     }
 }

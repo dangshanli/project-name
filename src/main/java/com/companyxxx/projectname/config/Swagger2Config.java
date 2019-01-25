@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * @author: luzj
  * @date: 2019-01-24
- * @description:
+ * @description: swagger2 配置
  */
 @Configuration
 @EnableSwagger2
@@ -34,7 +34,7 @@ public class Swagger2Config {
                 .description("SpringBoot 基本脚手架")
                 .termsOfServiceUrl("email.qq.com")
                 .contact(new Contact(
-                        "luzj",
+                        "er-gou",
                         "email.qq.com",
                         "email.qq.com"))
                 .version("1.0")
